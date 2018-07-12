@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables";
+
+.table-transaction {
+  max-width: 600px;
+  margin: auto;
+
+  &__row {
+    display: flex;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid $borColor;
+  }
+  
+  &__cell {
+    float: left;
+    width: 33%;
+    border-right: 1px solid $borColor;
+    padding: 5px;
+    box-sizing: border-box;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}

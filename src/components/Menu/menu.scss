@@ -1,0 +1,27 @@
+@import "../../assets/scss/variables";
+
+.menu {
+  float: left;
+  width: 100%;
+  background: $bgColor;
+  margin-bottom: 25px;
+  padding: 0 45px;
+  box-sizing: border-box;
+
+  &__link {
+    float: left;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    color: $txtColor;
+    transition: .4s;
+
+    &_active {
+      background: $bgHover;
+    }
+
+    &:hover {
+      background: $bgHover;
+    }
+  }
+}
