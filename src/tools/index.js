@@ -19,10 +19,9 @@ export const parsErrorJoi = data => {
  * @param id number
  */
 export const getNameBank = (banks, id) => {
-  let searchBank = banks.filter(item => +item.id === +id);
+  // такой вариант может сработать только если id банка идут по порядку, для прода я бы оставил
+  // filter или же написал функцию бинарного поиска если данных будет много тк никто не знает точно будут ли id банка просто порядковым номером элемента
+  let searchBank = banks[id - 1];
 
-  if (searchBank.length > 0) {
-    return searchBank[0].name;
-  }
-  return '';
+  return searchBank.name;
 };
